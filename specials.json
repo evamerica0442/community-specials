@@ -18,7 +18,7 @@
   {
     "id": "village-liquors",
     "businessId": "vl",
-    "businessName": "Village Liqours ShopSample Wines",
+    "businessName": "Village Liqours Grabouw",
     "category": "liquor",
     "flyer": "flyers/liqour.jpg",
     "altEn": "marked 18 plus.",
@@ -28,7 +28,7 @@
     "url": "https://village-liqours.vercel.app/",
     "startDate": "2026-10-24",
     "endDate": "2026-10-26",
-    "showOn": "rugby-club",
+    "showOn": ["rugby-club"],
     "approved": true
   }
 ]
