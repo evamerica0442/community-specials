@@ -1,0 +1,24 @@
+name: redeploy-sites
+
+# Expired flyers must disappear and new ones must appear without anyone
+# remembering to redeploy. 02:00 South African time is 00:00 UTC (SAST is
+# UTC+2 all year; there is no daylight saving).
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  hooks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Trigger each site's Vercel deploy hook
+        env:
+          DEPLOY_HOOK_GROENBERG_SCHOOL: ${{ secrets.DEPLOY_HOOK_GROENBERG_SCHOOL }}
+          DEPLOY_HOOK_RUGBY_CLUB: ${{ secrets.DEPLOY_HOOK_RUGBY_CLUB }}
+        run: node scripts/deploy-hooks.mjs

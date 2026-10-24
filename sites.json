@@ -1,0 +1,18 @@
+[
+  {
+    "id": "groenberg-school",
+    "name": "Groenberg Sekondêre Skool",
+    "url": "https://groenbergsek-lyart.vercel.app/",
+    "locales": ["en", "af"],
+    "blockedCategories": ["liquor", "gambling", "tobacco"],
+    "childFocused": true
+  },
+  {
+    "id": "rugby-club",
+    "name": "Safcol United Rugby Club",
+    "url": "https://safcolunited.vercel.app/",
+    "locales": ["en"],
+    "blockedCategories": ["gambling", "tobacco"],
+    "childFocused": false
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "id": "sample-bakery-weekend",
+    "businessId": "sample-bakery",
+    "businessName": "Sample Bakery",
+    "category": "food",
+    "flyer": "flyers/sample-bakery.webp",
+    "altEn": "Sample Bakery demo flyer: a portrait poster with a bread special for the weekend.",
+    "altAf": "Sample Bakery-demo-banier: ’n portretplakkaat met ’n broodspesiale vir die naweek.",
+    "captionEn": "A demo flyer for the sample bakery.",
+    "captionAf": "’n Demobanier vir die voorbeeldbakery.",
+    "url": "https://example.com/sample-bakery",
+    "startDate": "2026-01-01",
+    "endDate": "2026-12-31",
+    "showOn": ["demo-site"],
+    "approved": true
+  },
+  {
+    "id": "sample-wines-tasting",
+    "businessId": "sample-wines",
+    "businessName": "Sample Wines",
+    "category": "liquor",
+    "flyer": "flyers/sample-wines.webp",
+    "altEn": "Sample Wines demo flyer: a portrait poster for a tasting evening, marked 18 plus.",
+    "altAf": "Sample Wines-demo-banier: ’n portretplakkaat vir ’n proeaand, gemerk 18 plus.",
+    "captionEn": "A demo flyer for the sample wines shop.",
+    "captionAf": "’n Demobanier vir die voorbeeldwynwinkel.",
+    "url": "https://example.com/sample-wines",
+    "startDate": "2026-01-01",
+    "endDate": "2026-12-31",
+    "showOn": ["demo-site"],
+    "approved": true
+  }
+]

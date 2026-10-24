@@ -1,0 +1,66 @@
+{
+  "name": "community-specials",
+  "version": "0.1.0",
+  "description": "A shared pool of portrait flyers from local businesses in Grabouw, displayed by community websites.",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/esm/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    },
+    "./components": {
+      "types": "./dist/esm/components.d.ts",
+      "import": "./dist/esm/components.js",
+      "require": "./dist/cjs/components.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "kit"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@10.12.4",
+  "scripts": {
+    "prepare": "pnpm build",
+    "build": "pnpm build:esm && pnpm build:cjs && node scripts/write-dist-metadata.mjs",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "validate": "tsx scripts/validate.ts",
+    "generate:samples": "tsx scripts/generate-samples.ts",
+    "deploy:hooks": "node scripts/deploy-hooks.mjs"
+  },
+  "dependencies": {
+    "sharp": "^0.34.2",
+    "zod": "^3.25.76"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "eslint": "^9.17.0",
+    "globals": "^17.13.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.18.1",
+    "vitest": "^3.0.8"
+  }
+}

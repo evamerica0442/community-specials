@@ -1,0 +1,10 @@
+node_modules/
+dist/
+coverage/
+test-results/
+*.tsbuildinfo
+.DS_Store
+demo/.next/
+demo/out/
+demo/public/flyers/
+demo/next-env.d.ts
