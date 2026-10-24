@@ -16,19 +16,19 @@
     "approved": true
   },
   {
-    "id": "sample-wines-tasting",
-    "businessId": "sample-wines",
-    "businessName": "Sample Wines",
+    "id": "village-liquors",
+    "businessId": "vl",
+    "businessName": "Village Liqours ShopSample Wines",
     "category": "liquor",
     "flyer": "flyers/liqour.jpg",
-    "altEn": "Sample Wines demo flyer: a portrait poster for a tasting evening, marked 18 plus.",
-    "altAf": "Sample Wines-demo-banier: ’n portretplakkaat vir ’n proeaand, gemerk 18 plus.",
-    "captionEn": "A demo flyer for the sample wines shop.",
-    "captionAf": "’n Demobanier vir die voorbeeldwynwinkel.",
+    "altEn": "marked 18 plus.",
+    "altAf": "gemerk 18 plus.",
+    "captionEn": "Weekend Special.",
+    "captionAf": "Naweek Winskopie.",
     "url": "https://village-liqours.vercel.app/",
-    "startDate": "2026-01-01",
-    "endDate": "2026-12-31",
-    "showOn": ["demo-site"],
+    "startDate": "2026-10-24",
+    "endDate": "2026-10-26",
+    "showOn": "rugby-club",
     "approved": true
   }
 ]
